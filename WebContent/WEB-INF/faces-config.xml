@@ -15,5 +15,14 @@
 		<managed-bean-class>com.demo.user</managed-bean-class>
 		<managed-bean-scope>session</managed-bean-scope>
 	</managed-bean>
-
+	<managed-bean>
+		<managed-bean-name>uploadProducts</managed-bean-name>
+		<managed-bean-class>com.demo.UploadProducts</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>categoryHandler</managed-bean-name>
+		<managed-bean-class>com.demo.CategoryHandler</managed-bean-class>
+		<managed-bean-scope>session</managed-bean-scope>
+	</managed-bean>
 </faces-config>
