@@ -2,8 +2,6 @@ package com.demo;
 
 import java.io.Serializable;
 
-import javax.faces.bean.*;
-
 public class user implements Serializable {
 	private static final long serialVersionUID = 1L;
 	private int user_id;
@@ -22,7 +20,6 @@ public class user implements Serializable {
 	}
 	
 	public void setName(String name){
-		System.out.println(name);
 		this.name = name;
 	}
 	

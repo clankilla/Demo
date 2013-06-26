@@ -14,15 +14,14 @@ import javax.faces.bean.*;
 public class login implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	@ManagedProperty(value="#{user}")
 	private user user_info;
 	
 	public String userExist() throws SQLException{
 		DataSource ds = null;
 		
-		System.out.println(": "+user_info);
 		
 		try{
+			user_info = (user)Accesor.getBean("user");
 			Context ctx = new InitialContext();
 			ds = (DataSource)ctx.lookup("java:comp/env/database-connection");
 			
@@ -40,10 +39,12 @@ public class login implements Serializable{
 			ResultSet rs = ps.executeQuery();
 			
 			while(rs.next()){
-				/*if(user_info.getName().contentEquals(rs.getString("username")) &&
+				if(user_info.getName().contentEquals(rs.getString("username")) &&
 												user_info.getPassword().contentEquals(rs.getString("password"))){
+					user_info.setPassword(null);
+					user_info.setUserId(rs.getInt("id"));
 					return ("welcome");
-				}*/
+				}
 			}
 		}catch(NamingException e){
 			e.printStackTrace();
