@@ -45,8 +45,7 @@ public class CategoryHandler {
 	
 	
 	public void getCategoryDB() throws SQLException{
-		DataSource ds = null;		
-
+		DataSource ds = null;	
 			
 		try{
 			Context ctx = new InitialContext();
