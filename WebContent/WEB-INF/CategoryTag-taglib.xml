@@ -6,9 +6,9 @@
 <facelet-taglib>
     <namespace>http://delta-analytics/jsf-custom-components/</namespace>
     <tag>
-        <tag-name>CategoryTag</tag-name>
+        <tag-name>Tree</tag-name>
         <component>
-            <component-type>CategoryTag</component-type>
+            <component-type>Tree</component-type>
         </component>
     </tag>
 </facelet-taglib>
