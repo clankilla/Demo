@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Categories{
-	
 	private String category_name;
 	private List<Categories> nodes;
 	

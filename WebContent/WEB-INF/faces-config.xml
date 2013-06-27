@@ -3,8 +3,13 @@
 <faces-config
     xmlns="http://java.sun.com/xml/ns/javaee"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+   					 	http://java.sun.com/xml/ns/javaee/web-facesconfig_2_1.xsd"
     version="2.1">
+   	<component>
+		<component-type>CategoryTag</component-type>
+		<component-class>com.demo.CategoryTag</component-class>
+	</component>
 	<managed-bean>
 		<managed-bean-name>login</managed-bean-name>
 		<managed-bean-class>com.demo.login</managed-bean-class>

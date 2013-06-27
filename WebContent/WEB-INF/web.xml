@@ -32,5 +32,17 @@
   	<res-ref-name>database-connection</res-ref-name>
   	<res-type>javax.sql.DataSource</res-type>
   	<res-auth>Container</res-auth>
+  	
   </resource-ref>
+    <resource-ref>
+  	<description>Conexion a la base de datos</description>
+  	<res-ref-name>database-category</res-ref-name>
+  	<res-type>javax.sql.DataSource</res-type>
+  	<res-auth>Container</res-auth>
+  </resource-ref>
+  
+  <context-param>
+  	<param-name>javax.faces.FACELETS_LIBRARIES</param-name>
+  	<param-value>/WEB-INF/CategoryTag-taglib.xml</param-value>
+  </context-param>
 </web-app>
